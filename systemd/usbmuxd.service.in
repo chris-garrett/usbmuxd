@@ -5,3 +5,4 @@ Documentation=man:usbmuxd(8)
 [Service]
 ExecStart=@sbindir@/usbmuxd --user usbmux --systemd
 PIDFile=@runstatedir@/usbmuxd.pid
+Environment=USBMUXD_DEFAULT_DEVICE_MODE=3
